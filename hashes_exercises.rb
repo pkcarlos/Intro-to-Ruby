@@ -154,7 +154,7 @@ boring_hash.empty?
 
 animals = [['dogs', 4], ['cats', 3], ['dogs', 7]]
 
-animals.selectb
+animals.selectbto
 
 
 #hash that contains sm of the values of dogs and sum of values of cars
