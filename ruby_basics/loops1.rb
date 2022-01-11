@@ -1,0 +1,112 @@
+#runaway loop
+
+loop do
+    puts 'Just keep printing...'
+    
+    break
+end
+
+
+#loopception
+
+loop do
+    puts "This is the outer loop."
+   
+    loop do
+        puts "This is the inner loop."
+        break
+    end
+    
+    break
+end
+
+puts "This is outside all loops."
+
+
+#control the loop
+
+iterations = 1
+
+loop do
+    puts "Number of iterations = #{iterations}"
+    iterations += 1
+    break if iterations > 5
+end
+
+
+#loop on command
+
+loop do
+    puts "Should I stop looping?"
+    answer = gets.chomp
+    break if answer == "yes"
+end
+
+
+#say hello
+
+say_hello = true
+n = 1
+
+while say_hello
+    puts "Hello!"
+    n += 1
+    say_hello = false if n == 6
+end
+
+
+#print while
+
+numbers = []
+
+while numbers.size < 5
+    numbers << rand(100)
+end
+
+puts numbers
+
+
+#count up
+
+count = 1
+
+until count > 10
+  puts count
+  count += 1
+end
+
+
+#print until
+
+numbers = [7, 9, 13, 25, 18]
+
+count = 0
+
+until count == numbers.size
+    puts numbers[count]
+    count += 1
+end
+
+
+#that's odd
+
+for i in 1..100
+  puts i if i.odd?
+end
+
+
+#greet your friends
+
+friends = ['Sarah', 'John', 'Hannah', 'Dave']
+
+for n in friends do
+    puts "Hi, #{n}!"
+end
+    
+
+
+    
+
+
+
+
